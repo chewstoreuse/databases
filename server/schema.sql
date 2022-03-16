@@ -20,6 +20,7 @@ CREATE TABLE messages (
   ID int not null,
   username_ID int,
   chatroom_ID int,
+  content text,
   time_stamp timestamp,
   PRIMARY KEY (ID),
   FOREIGN KEY (chatroom_ID) REFERENCES chatrooms (ID),
